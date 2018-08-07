@@ -1,0 +1,40 @@
+nav {
+  display: grid;
+  grid-template-columns: auto 70px;
+  top:0;
+  height: 32px;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  strong {
+    font-size: 24px;
+    margin-left: 10px;
+    -webkit-app-region: drag;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-self: right;
+
+    li {
+      z-index: 90;
+      display: block;
+      float: right;
+      padding-top: 3px;
+      a {
+        cursor: pointer;
+        display: block;
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        font-size: 24px;
+        margin: 0 5px;
+      }
+      a:hover {
+        color: white;
+      }
+    }
+  }
+}
